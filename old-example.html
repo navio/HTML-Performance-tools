@@ -1,0 +1,27 @@
+<doctype html>
+    <html>
+
+    <head>
+        <script type="text/javascript">
+            var timerStart = Date.now();
+        </script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            (function(timeStart) {
+                var finalTime = null;
+                var tId = setInterval(function() {
+                    if (document.readyState == "complete") {
+                        clearInterval(tId);
+                        finalTime = Date.now() - timerStart;
+                    }
+
+                }, 11);
+
+                if (finalTime) return finalTime;
+            })(timeStart)
+        </script>
+    </body>
+
+    </html>
