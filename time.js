@@ -10,3 +10,18 @@ function timeFromPreviousToStartNew(){ // Time spent from navigation to a new pa
 function timeToLoadFullPage() { // Time to load page once in the page.
 	return (timeFromPreviousToFullNew() - timeFromPreviousToStartNew());
 }
+
+
+var page = document.location.pathname;
+var pt = window.performance.timing;
+var sh = [];
+
+var transitionTime = pt.domContentLoadedEventEnd - pt.navigationStart;
+
+var domLoadCompeted = pt.domComplete - pt.connectStart;
+
+var domContentLoad = pt.domContentLoadedEventEnd - pt.domContentLoadedEventStart;
+
+var domainLookUp = pt.domainLookupEnd - pt.domainLookupStart;
+
+var loadEvent = pt.loadEventEnd - pt.loadEventStart;
