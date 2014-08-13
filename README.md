@@ -1,4 +1,4 @@
-Implementation on HTML Performance API
+Implementation of HTML Performance API
 ============
 
 Example of Navigation Timing
