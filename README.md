@@ -1,4 +1,4 @@
-Counter for Page Loading
+Implementation on HTML Performance API
 ============
 
 Example of Navigation Timing
